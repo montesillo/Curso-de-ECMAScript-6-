@@ -36,3 +36,31 @@ let team2 = ['Zoila', 'Yeri'];
 
 let family = ['Martin', ...team1, ...team2];
 console.log(family);
+
+//Manejo de objetos más amigable
+
+let name = 'hiram';
+let age = 29;
+
+//es5
+obj = { name: name, age: age}
+
+//es6
+
+obj2 = { name: name, age: age}
+
+console.log(obj2)
+
+const helloPromise = () => {
+    return new Promise((resolve, reject) => {
+        if(!true){
+            resolve('hey!!')
+        }else{
+            reject('Ups!!')
+        }
+    });
+}
+
+helloPromise()
+    .then(response => console.log(response))
+    .catch(error => console.log(error));
