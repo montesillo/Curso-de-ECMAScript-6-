@@ -103,3 +103,11 @@ const generatorHello = helloWorld();
 console.log(generatorHello.next().value);
 console.log(generatorHello.next().value);
 console.log(generatorHello.next().value);
+
+let numbers = [1, 2, 3, 4, 7, 8];
+
+if(numbers.includes(7)){
+    console.log('Si tiene el 7');
+}else{
+    console.log('No tiene el 7');
+}
